@@ -8,23 +8,42 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <form id="clacFrom">
-        <fieldset>
-            <legend>Kalk (kort för Kalkylator)</legend>
-            <input type="number" id="x"> 
-            <input type="number" id="y"> =
-            <output id="sum"></output>
-        </fieldset>
-        <fieldset>
-            <legend>Metod</legend>
-            <button id="add">+</button>
-            <button id="sub">-</button>
-            <button id="mult">*</button>
-            <button id="div">%</button>
-            <button id="root">^1/2</button>
-            <button id="func">func (inte implimenterad än)</button>
-        </fieldset>
-        <button id="submit">Kalkylera</button>
-    </form>
+    <fieldset>
+        <legend>Calc (short for calkylator)</legend>
+        <input type="text" id="toCalc"> =
+        <input id="sum"></inputs>
+    </fieldset>
+    <fieldset>
+        <legend>Method</legend>
+        <button id="add">+</button>
+        <button id="sub">-</button>
+        <button id="mult">*</button>
+        <button id="div">/</button>
+        <button id="pro">%</button>
+        <button id="pot">^</button>
+        <button id="root">^(1/2)</button>
+        <button id ="parL">(</button>
+        <button id ="parR">)</button>
+    </fieldset>
+    <fieldset>
+        <legend>numbers</legend>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="number">0</button>
+    </fieldset>
+    <fieldset>
+        <legend>functions</legend>
+        <button id="button">Kalkylera</button>
+        <button id="erase">Erase</button>
+        <button id="Reset">Ce</button>
+        <button id="Fullreset">C</button>
+    </fieldset>
 </body>
 </html>
