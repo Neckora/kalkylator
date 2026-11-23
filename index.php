@@ -10,16 +10,15 @@
 
 </head>
 <body>
-    <main>
+    <main class="calcylator">
         <div class="center">
             <fieldset class="calc">
-                <legend>Calc (short for calkylator)</legend>
+                <legend>Calc (short for calcylator)</legend>
                 <input type="text" id="toCalc"> =
                 <input id="sum"></inputs>
             </fieldset>
         </div>
         <fieldset class="methods">
-            <legend>Method</legend>
             <button class="trig method">sin</button>
             <button class="trig method">cos</button>
             <button class="trig method">tan</button>
@@ -34,7 +33,6 @@
             <button id ="parR" class="method">)</button>
         </fieldset>
         <fieldset class="numbers">
-            <legend>numbers</legend>
             <button class="number">1</button>
             <button class="number">2</button>
             <button class="number">3</button>
@@ -46,13 +44,14 @@
             <button class="number">9</button>
             <button class="number">0</button>
         </fieldset>
-        <fieldset class="function">
-            <legend>functions</legend>
-            <button id="button">Kalkylera</button>
-            <button id="erase">Erase</button>
-            <button id="Reset">C</button>
-            <button id="Fullreset">Ce</button>
-        </fieldset>
+        <div class="center">
+            <fieldset class="function">
+                <button id="button">Kalkylera</button>
+                <button id="erase">Erase</button>
+                <button id="Reset">C</button>
+                <button id="Fullreset">Ce</button>
+            </fieldset>
+        </div>
     </main>
 </body>
 </html>

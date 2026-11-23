@@ -11,10 +11,10 @@ body{
 }
 main{
     height: 50dvh;
-    width: 50dvw;
+    width: 20dvw;
 }
 .calc{
-    width: 23rem;
+    width: 13dvw;
 }
 .method{
     width: 9.09%;
@@ -31,4 +31,7 @@ main{
 .center{
     display: grid;
     place-content: center;
+}
+legend{
+    font-size: 1.5rem;
 }
