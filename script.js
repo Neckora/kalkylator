@@ -1,3 +1,7 @@
+const radians = {
+    sin: math.sin, cos: math.cos, tan: math.tan,
+};
+
 let allMethods = {
     "+" : "+",
     "-" : "-",
@@ -8,6 +12,9 @@ let allMethods = {
     "^(1/2)" : "**(1/2)",
     "(" : "(",
     ")" : ")",
+    "sin" : "sin(",
+    "cos" : "cos(",
+    "tan" : "tan("
 }
 
 for (let i = 0; i <= 9; i++) {
@@ -15,6 +22,7 @@ for (let i = 0; i <= 9; i++) {
 }
 
 let calced = false;
+//const prevCalced = [];
 
 function init(event){
     event.preventDefault();
@@ -32,14 +40,14 @@ function onClick(event){
     if (event.currentTarget.textContent == "Kalkylera"){
         calc();
     }
-    else if (event.currentTarget.textContent == "C"){
+    else if (event.currentTarget.textContent == "Ce"){
         toCalc.value = "";
         display.value = "";
     }
     else if (event.currentTarget.textContent == "Erase"){
         toCalc.value = toCalc.value.slice(0, -1);
     }
-    else if (event.currentTarget.textContent == "Ce"){
+    else if (event.currentTarget.textContent == "C"){
         toCalc.value = "";
     } else{
         if (calced == true){
@@ -59,14 +67,15 @@ function calc(){
 
     try {
         if (toCalc.value == ""){
-            display.value = ("error");
+            display.value = ("error: empty input");
         }
         else{   
-        display.value = eval(toCalc.value);
+        display.value = math.format(math.evaluate(toCalc.value), { precision: 12 });
         calced = true;
         }
     } catch (e){
-        display.value = ("error");
+        display.value = "error:"+ e.massage;
+        console.log(e)
     }
 }
 
