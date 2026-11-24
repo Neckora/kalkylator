@@ -2,23 +2,24 @@ const radians = {
     sin: math.sin, cos: math.cos, tan: math.tan,
 };
 
-let allMethods = {
+let specialOperations = {
     "+" : "+",
     "-" : "-",
     "*" : "*",
     "/" : "/",
-    "%" : "/100",
     "^" : "**",
-    "^(1/2)" : "**(1/2)",
+    "√" : "sqrt(",
     "(" : "(",
     ")" : ")",
     "sin" : "sin(",
     "cos" : "cos(",
-    "tan" : "tan("
+    "tan" : "tan(",
+    "π" : "pi",
+    "." : "."
 }
 
 for (let i = 0; i <= 9; i++) {
-    allMethods[i] = String(i);
+    specialOperations[i] = String(i);
 }
 
 let calced = false;
@@ -35,7 +36,6 @@ function init(event){
 
 function onClick(event){
     let toCalc = document.getElementById("toCalc");
-    let display = document.getElementById("sum");
 
     if (event.currentTarget.textContent == "Kalkylera"){
         calc();
@@ -52,11 +52,11 @@ function onClick(event){
     } else{
         if (calced == true){
             toCalc.value = "";
-            let textExpertion =  toCalc.value + allMethods[this.textContent.trim()];
+            let textExpertion =  toCalc.value + specialOperations[this.textContent.trim()];
             calced = false;
             toCalc.value = textExpertion;
         } else{
-            let textExpertion =  toCalc.value + allMethods[this.textContent.trim()];
+            let textExpertion =  toCalc.value + specialOperations[this.textContent.trim()];
             toCalc.value = textExpertion;
         }
     };
@@ -70,7 +70,7 @@ function calc(){
             display.value = ("error: empty input");
         }
         else{   
-        display.value = math.format(math.evaluate(toCalc.value), { precision: 12 });
+        toCalc.value = math.format(math.evaluate(toCalc.value), { precision: 12 });
         calced = true;
         }
     } catch (e){

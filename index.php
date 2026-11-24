@@ -13,43 +13,53 @@
     <main class="calcylator">
         <div class="center">
             <fieldset class="calc">
-                <legend>Calc (short for calcylator)</legend>
-                <input type="text" id="toCalc"> =
-                <input id="sum"></inputs>
+                <legend>Calc</legend>
+                <input type="text" id="toCalc">
             </fieldset>
         </div>
-        <fieldset class="methods">
-            <button class="trig method">sin</button>
-            <button class="trig method">cos</button>
-            <button class="trig method">tan</button>
-            <button id="add" class="method">+</button>
-            <button id="sub" class="method">-</button>
-            <button id="mult" class="method">*</button>
-            <button id="div" class="method">/</button>
-            <button id="pro" class="method">%</button>
-            <button id="pot" class="method">^</button>
-            <button id="root" class="method">^(1/2)</button>
-            <button id ="parL" class="method">(</button>
-            <button id ="parR" class="method">)</button>
-        </fieldset>
-        <fieldset class="numbers">
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="number">0</button>
-        </fieldset>
         <div class="center">
             <fieldset class="function">
-                <button id="button">Kalkylera</button>
-                <button id="erase">Erase</button>
-                <button id="Reset">C</button>
-                <button id="Fullreset">Ce</button>
+                <button class="functions" id="button">Kalkylera</button>
+                <button class="functions" id="erase">Erase</button>
+                <button class="functions"id="Reset">C</button>
+                <button class="functions" id="Fullreset">Ce</button>
+            </fieldset>
+        </div>
+        <div class="center">
+            <fieldset class="inputs">
+                <div class="divideTrig">
+                    <button class="trig">sin</button>
+                    <button class="trig">cos</button>
+                    <button class="trig">tan</button>
+                </div>
+                <div class="dividerMethodsSimple">
+                    <button id="add" class="method">+</button>
+                    <button id="sub" class="method">-</button>
+                    <button id="mult" class="method">*</button>
+                    <button id="div" class="method">/</button>
+                </div>
+                <div class="underDivider">
+                    <div class="dividerNumbers">
+                        <button class="number" id="aa">1</button>
+                        <button class="number" id="bb">2</button>
+                        <button class="number" id="cc">3</button>
+                        <button class="number" id="dd">4</button>
+                        <button class="number" id="ee">5</button>
+                        <button class="number" id="ff">6</button>
+                        <button class="number" id="gg">7</button>
+                        <button class="number" id="hh">8</button>
+                        <button class="number" id="ii">9</button>
+                        <button class="number" id="jj">.</button>
+                        <button class="number" id="kk">0</button>
+                        <button class="number" id="ll">π</button>
+                    </div>
+                    <div class="dividerMethodsAdvanced">
+                        <button id="pot" class="method">^</button>
+                        <button id="root" class="method">√</button>
+                        <button id ="parL" class="method">(</button>
+                        <button id ="parR" class="method">)</button>
+                    </div>
+                </div>
             </fieldset>
         </div>
     </main>

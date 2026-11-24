@@ -1,3 +1,7 @@
+:root{
+    --uni_width: 24vw;
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -10,23 +14,79 @@ body{
     width: 100dvw;
 }
 main{
-    height: 50dvh;
+    height: 90dvh;
     width: 20dvw;
 }
+input{
+    font-size: 1.5rem;
+}
 .calc{
-    width: 13dvw;
+    width: var(--uni_width);
 }
-.method{
-    width: 9.09%;
+input{
+    width: var(--uni_width);
 }
-.numbers{
+.function{
+    width: var(--uni_width);
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+}
+.functions{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.inputs{
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+}
+.divideTrig{
+    display: grid;
     place-content: center;
+    grid-template-columns: repeat(3, auto);
+}
+.dividerMethodsSimple{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, auto);
+}
+.underDivider{
+    display: flex;
+    flex-direction: row;
+}
+.dividerMethodsAdvanced{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+.dividerNumbers{
+    display: grid;
+    grid-template-areas: 
+    "aa bb cc"
+    "dd ee ff"
+    "gg hh ii"
+    "jj kk ll";
 }
 .number{
-    place-content: center;
+    width: 4rem;
+    height: 4rem;
     font-size: 2rem;
+    margin: 0.4rem;
+}
+.method{
+    width: 3.9rem;
+    height: 4rem;
+    font-size: 2rem;
+    margin-left: 0.45rem;
+    margin-right: 0.45rem;
+}
+.trig{
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .center{
     display: grid;
