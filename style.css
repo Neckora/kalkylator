@@ -12,29 +12,46 @@ body{
     place-content: center;
     height: 100dvh;
     width: 100dvw;
+    background: linear-gradient(lightgray, white);
+}
+fieldset{
+    background: gray;
+    border-radius: 2rem;
+    outline: 0.3rem solid rgb(74, 66, 66);
+    outline-offset: -0.3;
 }
 main{
-    height: 90dvh;
-    width: 20dvw;
+    height: 95dvh;
+    width: 30dvw;
+    background: black;
+    display: grid;
+    place-content: center;
+    border-radius: 3rem;
 }
-input{
-    font-size: 1.5rem;
+button{
+    border-radius: 2rem;
 }
 .calc{
     width: var(--uni_width);
 }
 input{
     width: var(--uni_width);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    height: 3rem;
 }
-.function{
+.calc{
     width: var(--uni_width);
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    place-content: center;
+    grid-template-columns: repeat(3, auto);
 }
 .functions{
     font-size: 1.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 .inputs{
     margin: 0.3rem;
@@ -59,6 +76,7 @@ input{
 .dividerMethodsAdvanced{
     display: grid;
     grid-template-columns: repeat(1, auto);
+    margin-top: 0.4rem;
 }
 .dividerNumbers{
     display: grid;
@@ -83,8 +101,7 @@ input{
 }
 .trig{
     font-size: 2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }

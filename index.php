@@ -13,25 +13,17 @@
     <main class="calcylator">
         <div class="center">
             <fieldset class="calc">
-                <legend>Calc</legend>
                 <input type="text" id="toCalc">
             </fieldset>
         </div>
-        <div class="center">
-            <fieldset class="function">
-                <button class="functions" id="button">Kalkylera</button>
-                <button class="functions" id="erase">Erase</button>
-                <button class="functions"id="Reset">C</button>
-                <button class="functions" id="Fullreset">Ce</button>
-            </fieldset>
-        </div>
-        <div class="center">
-            <fieldset class="inputs">
+        <fieldset class="inputs">
+            <div class="center">
                 <div class="divideTrig">
                     <button class="trig">sin</button>
                     <button class="trig">cos</button>
                     <button class="trig">tan</button>
                 </div>
+            </div>
                 <div class="dividerMethodsSimple">
                     <button id="add" class="method">+</button>
                     <button id="sub" class="method">-</button>
@@ -60,8 +52,14 @@
                         <button id ="parR" class="method">)</button>
                     </div>
                 </div>
-            </fieldset>
-        </div>
+                <div class="center">
+                    <div class="function">
+                        <button class="functions" id="erase">Erase</button>
+                        <button class="functions" id="Fullreset">Ce</button>
+                        <button class="functions" id="button">Kalkylera</button>
+                    </div>
+                </div>
+        </fieldset>
     </main>
 </body>
 </html>
