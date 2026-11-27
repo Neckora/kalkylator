@@ -12,24 +12,27 @@ body{
     place-content: center;
     height: 100dvh;
     width: 100dvw;
-    background: linear-gradient(lightgray, white);
+    background: linear-gradient(85deg lightgray, white);
 }
 fieldset{
-    background: gray;
+    background:linear-gradient(135deg, rgb(220, 217, 217), rgb(212, 188, 188));
     border-radius: 2rem;
     outline: 0.3rem solid rgb(74, 66, 66);
     outline-offset: -0.3;
 }
 main{
-    height: 95dvh;
+    height: 97dvh;
     width: 30dvw;
-    background: black;
+    background: linear-gradient(135deg, rgb(62, 58, 58), black);
     display: grid;
     place-content: center;
     border-radius: 3rem;
+    box-shadow: 0.5rem 0.4rem 0.2rem gray;
 }
 button{
     border-radius: 2rem;
+    box-shadow: 0.3rem 0.2rem 0.2rem;
+    text-shadow: 0.15rem 0.1rem 0.1rem gray;
 }
 .calc{
     width: var(--uni_width);
@@ -39,6 +42,7 @@ input{
     font-size: 1.5rem;
     border-radius: 2rem;
     height: 3rem;
+    text-shadow: 0.15rem 0.1rem 0.1rem gray;
 }
 .calc{
     width: var(--uni_width);

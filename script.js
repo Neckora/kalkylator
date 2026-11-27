@@ -1,8 +1,4 @@
-const radians = {
-    sin: math.sin, cos: math.cos, tan: math.tan,
-};
-
-let specialOperations = {
+let Operations = {
     "+" : "+",
     "-" : "-",
     "*" : "*",
@@ -19,8 +15,12 @@ let specialOperations = {
 }
 
 for (let i = 0; i <= 9; i++) {
-    specialOperations[i] = String(i);
+    Operations[i] = String(i);
 }
+
+const radians = {
+    sin: math.sin, cos: math.cos, tan: math.tan,
+};
 
 let calced = false;
 //const prevCalced = [];
@@ -52,11 +52,11 @@ function onClick(event){
     } else{
         if (calced == true){
             toCalc.value = "";
-            let textExpertion =  toCalc.value + specialOperations[this.textContent.trim()];
+            let textExpertion =  toCalc.value + Operations[this.textContent.trim()];
             calced = false;
             toCalc.value = textExpertion;
         } else{
-            let textExpertion =  toCalc.value + specialOperations[this.textContent.trim()];
+            let textExpertion =  toCalc.value + Operations[this.textContent.trim()];
             toCalc.value = textExpertion;
         }
     };
