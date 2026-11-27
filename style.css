@@ -10,6 +10,7 @@
 body{
     display: grid;
     place-content: center;
+    grid-template-rows: repeat(3fr, auto);
     height: 100dvh;
     width: 100dvw;
     background: linear-gradient(85deg lightgray, white);
@@ -22,7 +23,7 @@ fieldset{
 }
 main{
     height: 97dvh;
-    width: 30dvw;
+    width: clamp(26dvw, 50dvw, 100dvw);
     background: linear-gradient(135deg, rgb(62, 58, 58), black);
     display: grid;
     place-content: center;
@@ -38,11 +39,11 @@ button{
     width: var(--uni_width);
 }
 input{
-    width: var(--uni_width);
+    width: clamp(var(--uni_width), 30dvw,60dvw);
     font-size: 1.5rem;
     border-radius: 2rem;
     height: 3rem;
-    text-shadow: 0.15rem 0.1rem 0.1rem gray;
+    text-shadow: 0.2rem 0.1rem 0.3rem gray;
 }
 .calc{
     width: var(--uni_width);
@@ -115,4 +116,11 @@ input{
 }
 legend{
     font-size: 1.5rem;
+}
+
+
+@media screen and (min-height:900px){
+    main{
+        height: 50dvh;;
+    }
 }

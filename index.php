@@ -30,26 +30,28 @@
                     <button id="mult" class="method">*</button>
                     <button id="div" class="method">/</button>
                 </div>
-                <div class="underDivider">
-                    <div class="dividerNumbers">
-                        <button class="number" id="aa">1</button>
-                        <button class="number" id="bb">2</button>
-                        <button class="number" id="cc">3</button>
-                        <button class="number" id="dd">4</button>
-                        <button class="number" id="ee">5</button>
-                        <button class="number" id="ff">6</button>
-                        <button class="number" id="gg">7</button>
-                        <button class="number" id="hh">8</button>
-                        <button class="number" id="ii">9</button>
-                        <button class="number" id="jj">.</button>
-                        <button class="number" id="kk">0</button>
-                        <button class="number" id="ll">π</button>
-                    </div>
-                    <div class="dividerMethodsAdvanced">
-                        <button id="pot" class="method">^</button>
-                        <button id="root" class="method">√</button>
-                        <button id ="parL" class="method">(</button>
-                        <button id ="parR" class="method">)</button>
+                <div class="center">
+                    <div class="underDivider">
+                        <div class="dividerNumbers">
+                            <button class="number" id="aa">1</button>
+                            <button class="number" id="bb">2</button>
+                            <button class="number" id="cc">3</button>
+                            <button class="number" id="dd">4</button>
+                            <button class="number" id="ee">5</button>
+                            <button class="number" id="ff">6</button>
+                            <button class="number" id="gg">7</button>
+                            <button class="number" id="hh">8</button>
+                            <button class="number" id="ii">9</button>
+                            <button class="number" id="jj">.</button>
+                            <button class="number" id="kk">0</button>
+                            <button class="number" id="ll">π</button>
+                        </div>
+                        <div class="dividerMethodsAdvanced">
+                            <button id="pot" class="method">^</button>
+                            <button id="root" class="method">√</button>
+                            <button id ="parL" class="method">(</button>
+                            <button id ="parR" class="method">)</button>
+                        </div>
                     </div>
                 </div>
                 <div class="center">
